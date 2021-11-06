@@ -1,0 +1,32 @@
+.toolBar-container {
+  position: relative;
+  display: flex;
+  margin-top: 70px !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output-tracker * {
+  font-family: Roboto-Light;
+}
+.tracker-value {
+  font-family: Roboto-Medium;
+  font-size: 18px;
+}
+
+.btn-clearDone {
+  padding: 10px 25px;
+  border-radius: 7px;
+  font-family: Roboto-Medium;
+  color: rgba(255, 255, 255, .75);
+  background-image: linear-gradient(#F45151,#981717);
+  border: .5px solid #DF0909;
+  cursor: pointer;
+  transition: color .2s, opacity .05s;
+}
+.btn-clearDone:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.btn-clearDone:active {
+  opacity: .8;
+}

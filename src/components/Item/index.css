@@ -1,0 +1,53 @@
+.item-container {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 30px;
+  background-image: linear-gradient(#414141,#282828);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-leftWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-checkbox {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.item-content {
+  color: white;
+  letter-spacing: 1.2px;
+}
+.item-date {
+  margin-top: 3px;
+  font-family: Roboto-Light;
+  color: white;
+  font-size: .75rem;
+  letter-spacing: .8px;
+  opacity: .5;
+}
+
+.btn-deleteItem {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #FF7070;
+  cursor: pointer;
+  transition: filter .4s, transform .2s;
+}
+.btn-deleteItem:hover {
+  transform: translateY(-5%);
+  filter: drop-shadow(0px 0px 8px rgba(255, 58, 58, .8));
+}
+.btn-deleteItem:active {
+  transform: translateY(5%);
+  transition: 0s;
+}
