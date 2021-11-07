@@ -6,20 +6,24 @@
   border-radius: 10px;
   align-items: center;
   justify-content: space-between;
+  margin: 10px 0px;
+  opacity: .85;
+  transition: opacity .2s;
+}
+.item-container.checked {
+  opacity: .6;
+}
+.item-container:hover {
+  opacity: 1;
+}
+.item-container.deleted {
+  display: none;
 }
 
 .item-leftWrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.item-checkbox {
-  background-color: white;
-  height: 15px;
-  width: 15px;
-  border-radius: 3px;
-  margin-right: 20px;
 }
 
 .item-content {
@@ -36,12 +40,15 @@
 }
 
 .btn-deleteItem {
+  opacity: 0;
+  margin-left: 15px;
   background: none;
   border: none;
   font-size: 20px;
   color: #FF7070;
   cursor: pointer;
   transition: filter .4s, transform .2s;
+  transition: opacity .2s;
 }
 .btn-deleteItem:hover {
   transform: translateY(-5%);
